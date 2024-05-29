@@ -1,6 +1,6 @@
 .PHONY: up down create
 
-DATABASE_URL ?= postgresql://postgres:2ea23EE6f*e*Af1gDEECA*Ad4a2*GCGb@roundhouse.proxy.rlwy.net:57660/railway
+DATABASE_URL ?= POSTGRES_URL
 MIGRATIONS_PATH ?= ./internal/database/migrations
 
 PRIVATE_BUILD=go build -o ./bin/eccommerce/main ./cmd/eccommerce/main.go

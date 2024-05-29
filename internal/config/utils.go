@@ -89,7 +89,7 @@ func (c *Config) getKubernetesClient() {
 }
 
 func (c *Config) getRedisClient() {
-	opt, err := redis.ParseURL("redis://default:Klp6LDake6jBlcfDnpldJ4D1DKN2K2i4@roundhouse.proxy.rlwy.net:27514")
+	opt, err := redis.ParseURL("")
 	if err != nil {
 		panic(err)
 	}
