@@ -1,0 +1,61 @@
+<script>
+    // JavaScript logic, if necessary
+  </script>
+  
+  <div class="loader ">
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+  </div>
+  
+  <style>
+    .circle {
+      position: absolute;
+      border: 3px solid transparent;
+      border-top-color: var(--primary-color);
+      border-radius: 50%;
+      animation: rotate linear infinite;
+    }
+  
+    .circle.one {
+      height: 50px;
+      width: 50px;
+      left: 50px;
+      top: 50px;
+      animation-duration: 0.85s;
+    }
+  
+    .circle.two {
+      height: 75px;
+      width: 75px;
+      top: 38px;
+      left: 38px;
+      animation-duration: 0.95s;
+    }
+  
+    .circle.three {
+      height: 100px;
+      width: 100px;
+      top: 25px;
+      left: 25px;
+      animation-duration: 1.05s;
+    }
+  
+    @keyframes rotate {
+      from {
+        transform: rotateZ(360deg);
+      }
+      to {
+        transform: rotateZ(0deg);
+      }
+    }
+  
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -90px 0 0 -90px;
+      background-color: white; /* Set background color to white */
+    }
+  </style>
+  

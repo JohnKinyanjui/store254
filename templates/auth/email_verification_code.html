@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Email Confirmation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      background-color: #e9ecef;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0px;
+      mso-table-rspace: 0px;
+    }
+
+    table td {
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 20px; /* Smaller size for the header */
+    }
+
+    p {
+      font-size: 13px; /* Smaller size for paragraphs */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" bgcolor="#e9ecef" style="padding: 36px;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+          <tr>
+            <td align="left" bgcolor="#ffffff"
+              style="padding: 36px; font-size: 18px; line-height: 24px; border-top: 3px solid #49B47E;">
+              <h1 style="margin: 0; color: #49B47E;">Fusion Market</h1> <!-- Color changed -->
+              <br>
+              <p style="margin: 0;">Dear {{.Name}},</p>
+              <br>
+              <p style="margin: 0;">Thank you for choosing our service. To complete your email verification, please use
+                the following verification code:</p>
+              <br>
+              <h2 style="margin: 0; font-size: 18px; line-height: 32px; color: #000;">{{.Otp}}</h2>
+              <br>
+              <p style="margin: 0;">This code will expire in 5 Minutes. If you did not initiate this request, please
+                disregard this email.</p>
+              <br>
+              <p style="margin: 0;">Thank you for your attention. If you have any questions, feel free to contact our
+                support team.</p>
+              <br>
+              <p style="margin: 0;">Best regards,<br>Support</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
